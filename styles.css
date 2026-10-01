@@ -259,7 +259,11 @@ h2, h3 { margin: 0 0 .6rem; }
   left: 0; top: .02em;
   font-size: 1.15rem;
 }
-.tips li:first-child::before { content: "🎈"; }
+.tips li:nth-child(1)::before { content: "🎈"; }
+.tips li:nth-child(2)::before { content: "🔦"; }
+.tips li:nth-child(3)::before { content: "🎶"; }
+.tips li:nth-child(4)::before { content: "🏡"; }
+.tips li:nth-child(5)::before { content: "🍬"; }
 
 /* CTA */
 .card--cta {
