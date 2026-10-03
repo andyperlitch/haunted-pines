@@ -218,20 +218,42 @@ h2, h3 { margin: 0 0 .6rem; }
 }
 
 /* Map */
-.card--map { padding: .75rem; }
+.card--map { padding: 1.25rem 1rem 1rem; }
+.card--map .label { display: block; text-align: center; margin-bottom: .2rem; }
+.card--map .label::before { margin-right: .4rem; }
+.label--balloon::before { content: "🎈"; }
+.map-count {
+  text-align: center;
+  font-weight: 700;
+  color: var(--cream) !important;
+  margin-bottom: .8rem !important;
+}
+.map-count strong { color: var(--orange-hot); font-size: 1.15em; }
 .map {
   position: relative;
   border-radius: 12px;
   overflow: hidden;
-  aspect-ratio: 16 / 8;
+  aspect-ratio: 16 / 10;
   background: var(--bg-deep);
+  border: 2px solid rgba(212, 22, 28, .45);
+  z-index: 0;
 }
-.map iframe {
-  position: absolute; inset: 0;
-  width: 100%; height: 100%;
-  border: 0;
-  filter: saturate(.9);
+.balloon-pin { background: none; border: 0; }
+.balloon-pin svg {
+  display: block;
+  filter: drop-shadow(0 0 6px rgba(212, 22, 28, .75)) drop-shadow(0 2px 2px rgba(0, 0, 0, .5));
+  transition: transform .15s ease;
+  transform-origin: 50% 100%;
 }
+.balloon-pin:hover svg { transform: scale(1.15); }
+.map .leaflet-popup-content-wrapper, .map .leaflet-popup-tip {
+  background: var(--panel-2);
+  color: var(--cream);
+  border: 1.5px solid var(--orange);
+}
+.map .leaflet-popup-content { font-family: var(--body); font-size: .95rem; line-height: 1.45; margin: .7rem .9rem; }
+.map .leaflet-popup-content a { color: var(--orange-hot); font-weight: 700; }
+.map a.leaflet-popup-close-button { color: var(--cream-dim); }
 .note {
   margin: .7rem .5rem .2rem !important;
   font-size: .92rem;
@@ -331,7 +353,7 @@ h2, h3 { margin: 0 0 .6rem; }
   .grid { grid-template-columns: 1fr; }
   .card { padding: 1.25rem 1.2rem; }
   .card--intro { padding: 1.5rem 1.2rem; }
-  .map { aspect-ratio: 4 / 3; }
+  .map { aspect-ratio: 1 / 1; }
   .button { display: block; padding: 1rem 1.25rem; }
 }
 

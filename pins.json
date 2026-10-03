@@ -1,0 +1,50 @@
+{
+ "count": 9,
+ "pins": [
+  {
+   "address": "145 Estrella Dr",
+   "lat": 37.042145,
+   "lng": -122.03614
+  },
+  {
+   "address": "520 Pinecone Dr",
+   "lat": 37.041207,
+   "lng": -122.036815
+  },
+  {
+   "address": "701 Pinecone Dr",
+   "lat": 37.039137,
+   "lng": -122.037112
+  },
+  {
+   "address": "740 Pinecone Dr",
+   "lat": 37.038845,
+   "lng": -122.03781
+  },
+  {
+   "address": "804 Pinecone Dr",
+   "lat": 37.038545,
+   "lng": -122.03898
+  },
+  {
+   "address": "870 Pinecone Dr",
+   "lat": 37.037664,
+   "lng": -122.039793
+  },
+  {
+   "address": "455 Twin Pines Dr",
+   "lat": 37.042954,
+   "lng": -122.038862
+  },
+  {
+   "address": "1359 Whispering Pines Dr",
+   "lat": 37.037406,
+   "lng": -122.040839
+  },
+  {
+   "address": "1360 Whispering Pines Dr",
+   "lat": 37.03744,
+   "lng": -122.040698
+  }
+ ]
+}

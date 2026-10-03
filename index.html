@@ -32,6 +32,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/hero.jpg">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -66,11 +67,11 @@
       </section>
     </div>
 
-    <section class="card card--map">
-      <div class="map">
-        <iframe title="Map of Whispering Pines, Scotts Valley" src="https://maps.google.com/maps?q=Whispering+Pines+Dr,+Scotts+Valley,+CA+95066&amp;z=15&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
-      <p class="note">🗺️ Map of participating streets coming soon</p>
+    <section class="card card--map" id="candy-map">
+      <h3 class="label label--balloon">Find the red balloons</h3>
+      <p class="map-count" id="map-count">Loading the candy map…</p>
+      <div class="map" id="map" role="region" aria-label="Map of houses handing out candy"></div>
+      <p class="note">🎈 Every pin is a house handing out candy. New houses are added as neighbors sign up.</p>
     </section>
 
     <section class="card">
@@ -108,6 +109,9 @@
     <p class="footer__deco" aria-hidden="true">🍂 🎃 🍂</p>
     <p>Organized by your Pines neighbors: Andy, Ashley, Mandy, and friends.</p>
   </footer>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script src="map.js" defer></script>
 
 </body>
 </html>
