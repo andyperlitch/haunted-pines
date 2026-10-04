@@ -1,15 +1,30 @@
 {
- "count": 9,
+ "count": 15,
  "pins": [
+  {
+   "address": "101 Civic Center Drive Apt 311",
+   "lat": 37.049746,
+   "lng": -122.017602
+  },
   {
    "address": "145 Estrella Dr",
    "lat": 37.042145,
    "lng": -122.03614
   },
   {
+   "address": "892 Lockewood Ln",
+   "lat": 37.038443,
+   "lng": -122.041458
+  },
+  {
    "address": "520 Pinecone Dr",
    "lat": 37.041207,
    "lng": -122.036815
+  },
+  {
+   "address": "560 Pinecone Dr",
+   "lat": 37.041128,
+   "lng": -122.036872
   },
   {
    "address": "701 Pinecone Dr",
@@ -30,6 +45,21 @@
    "address": "870 Pinecone Dr",
    "lat": 37.037664,
    "lng": -122.039793
+  },
+  {
+   "address": "4555 Scott\u2019s Valley Dr Unit A",
+   "lat": 37.047706,
+   "lng": -122.017601
+  },
+  {
+   "address": "630 Sugar Pine Rd",
+   "lat": 37.04166,
+   "lng": -122.039781
+  },
+  {
+   "address": "84 Tan Oak Dr",
+   "lat": 37.040882,
+   "lng": -122.038109
   },
   {
    "address": "455 Twin Pines Dr",

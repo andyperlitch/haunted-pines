@@ -1,4 +1,9 @@
 {
+ "101 Civic Center Drive Apt 311": {
+  "lat": 37.049746,
+  "lng": -122.017602,
+  "source": "census"
+ },
  "1359 Whispering Pines Dr": {
   "lat": 37.037406,
   "lng": -122.040839,
@@ -19,9 +24,24 @@
   "lng": -122.038862,
   "source": "census"
  },
+ "4555 Scott\u2019s Valley Dr Unit A": {
+  "lat": 37.047706,
+  "lng": -122.017601,
+  "source": "census"
+ },
  "520 Pinecone Dr": {
   "lat": 37.041207,
   "lng": -122.036815,
+  "source": "census"
+ },
+ "560 Pinecone Dr": {
+  "lat": 37.041128,
+  "lng": -122.036872,
+  "source": "census"
+ },
+ "630 Sugar Pine Rd": {
+  "lat": 37.04166,
+  "lng": -122.039781,
   "source": "census"
  },
  "701 Pinecone Dr": {
@@ -39,9 +59,19 @@
   "lng": -122.03898,
   "source": "census"
  },
+ "84 Tan Oak Dr": {
+  "lat": 37.040882,
+  "lng": -122.038109,
+  "source": "census"
+ },
  "870 Pinecone Dr": {
   "lat": 37.037664,
   "lng": -122.039793,
+  "source": "census"
+ },
+ "892 Lockewood Ln": {
+  "lat": 37.038443,
+  "lng": -122.041458,
   "source": "census"
  }
 }
