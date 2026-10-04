@@ -1,5 +1,5 @@
 {
- "count": 15,
+ "count": 16,
  "pins": [
   {
    "address": "101 Civic Center Drive Apt 311",
@@ -65,6 +65,11 @@
    "address": "455 Twin Pines Dr",
    "lat": 37.042954,
    "lng": -122.038862
+  },
+  {
+   "address": "1345 Whispering Pines Dr",
+   "lat": 37.037229,
+   "lng": -122.040752
   },
   {
    "address": "1359 Whispering Pines Dr",
