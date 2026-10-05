@@ -29,6 +29,11 @@
   "lng": -122.03614,
   "source": "census"
  },
+ "444 Whispering Pines Dr": {
+  "lat": 37.041508,
+  "lng": -122.028437,
+  "source": "census"
+ },
  "455 Twin Pines Dr": {
   "lat": 37.042954,
   "lng": -122.038862,
@@ -42,6 +47,11 @@
  "520 Pinecone Dr": {
   "lat": 37.041207,
   "lng": -122.036815,
+  "source": "census"
+ },
+ "545 Pinecone Dr": {
+  "lat": 37.041541,
+  "lng": -122.036411,
   "source": "census"
  },
  "560 Pinecone Dr": {
