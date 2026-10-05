@@ -1,6 +1,11 @@
 {
- "count": 14,
+ "count": 16,
  "pins": [
+  {
+   "address": "116 Baja Sol Dr",
+   "lat": 37.039821,
+   "lng": -122.038004
+  },
   {
    "address": "145 Estrella Dr",
    "lat": 37.042145,
@@ -20,6 +25,11 @@
    "address": "560 Pinecone Dr",
    "lat": 37.041128,
    "lng": -122.036872
+  },
+  {
+   "address": "610 Pinecone Dr",
+   "lat": 37.040757,
+   "lng": -122.037101
   },
   {
    "address": "701 Pinecone Dr",

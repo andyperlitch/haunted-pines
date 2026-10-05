@@ -4,6 +4,11 @@
   "lng": -122.017602,
   "source": "census"
  },
+ "116 Baja Sol Dr": {
+  "lat": 37.039821,
+  "lng": -122.038004,
+  "source": "census"
+ },
  "1345 Whispering Pines Dr": {
   "lat": 37.037229,
   "lng": -122.040752,
@@ -42,6 +47,11 @@
  "560 Pinecone Dr": {
   "lat": 37.041128,
   "lng": -122.036872,
+  "source": "census"
+ },
+ "610 Pinecone Dr": {
+  "lat": 37.040757,
+  "lng": -122.037101,
   "source": "census"
  },
  "630 Sugar Pine Rd": {
