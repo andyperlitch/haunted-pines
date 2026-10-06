@@ -30,15 +30,8 @@
     className: "balloon-pin",
     html: balloonSvg,
     iconSize: [30, 45],
-    iconAnchor: [15, 45],
-    popupAnchor: [0, -40]
+    iconAnchor: [15, 45]
   });
-
-  function esc(s) {
-    return String(s).replace(/[&<>"']/g, function (c) {
-      return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-    });
-  }
 
   fetch("pins.json?v=" + Math.floor(Date.now() / 600000), { cache: "no-cache" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
@@ -49,11 +42,8 @@
         return;
       }
       var markers = pins.map(function (p) {
-        var dir = "https://www.google.com/maps/dir/?api=1&destination=" +
-          encodeURIComponent(p.address + ", Scotts Valley, CA 95066");
-        return L.marker([p.lat, p.lng], { icon: icon, title: p.address, alt: p.address })
-          .bindPopup('<strong>' + esc(p.address) + '</strong><br>🎃 Candy here! <a href="' + dir +
-            '" target="_blank" rel="noopener">Directions</a>');
+        // Pins are decorative only: no popups, hover titles, clicks, or keyboard focus.
+        return L.marker([p.lat, p.lng], { icon: icon, alt: p.address, interactive: false, keyboard: false });
       });
       var group = L.featureGroup(markers).addTo(map);
       map.fitBounds(group.getBounds(), { paddingTopLeft: [30, 55], paddingBottomRight: [30, 15], maxZoom: 17 });
