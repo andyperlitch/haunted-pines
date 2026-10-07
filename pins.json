@@ -1,5 +1,5 @@
 {
- "count": 18,
+ "count": 19,
  "pins": [
   {
    "address": "116 Baja Sol Dr",
@@ -65,6 +65,11 @@
    "address": "84 Tan Oak Dr",
    "lat": 37.040882,
    "lng": -122.038109
+  },
+  {
+   "address": "90 Tan Oak Dr",
+   "lat": 37.040946,
+   "lng": -122.038156
   },
   {
    "address": "455 Twin Pines Dr",
