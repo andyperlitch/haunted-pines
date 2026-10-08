@@ -1,5 +1,5 @@
 {
- "count": 19,
+ "count": 20,
  "pins": [
   {
    "address": "116 Baja Sol Dr",
@@ -75,6 +75,11 @@
    "address": "455 Twin Pines Dr",
    "lat": 37.042954,
    "lng": -122.038862
+  },
+  {
+   "address": "460 Twin Pines Dr",
+   "lat": 37.04295,
+   "lng": -122.039017
   },
   {
    "address": "444 Whispering Pines Dr",
