@@ -54,6 +54,11 @@
   "lng": -122.04255,
   "source": "census"
  },
+ "295 Baja Sol Dr": {
+  "lat": 37.03871,
+  "lng": -122.035764,
+  "source": "census"
+ },
  "444 Whispering Pines Dr": {
   "lat": 37.041508,
   "lng": -122.028437,
@@ -97,6 +102,16 @@
  "630 Sugar Pine Rd": {
   "lat": 37.04166,
   "lng": -122.039781,
+  "source": "census"
+ },
+ "671 Worth Ln": {
+  "lat": 37.041874,
+  "lng": -122.041268,
+  "source": "census"
+ },
+ "691 Worth Ln": {
+  "lat": 37.041661,
+  "lng": -122.041506,
   "source": "census"
  },
  "701 Pinecone Dr": {
