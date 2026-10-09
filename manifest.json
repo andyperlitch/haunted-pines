@@ -1,0 +1,15 @@
+{
+  "name": "Haunted Pines",
+  "short_name": "Haunted Pines",
+  "description": "Halloween trick-or-treat in Whispering Pines & Twin Pines, Scotts Valley. Follow the glowing red balloons!",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#1a0f2e",
+  "theme_color": "#1a0f2e",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}

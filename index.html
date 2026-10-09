@@ -27,7 +27,14 @@
   <meta name="twitter:title" content="Haunted Pines Trick-or-Treat · Halloween 2026">
   <meta name="twitter:description" content="Follow the red balloons! Whispering Pines & Twin Pines neighborhoods, Scotts Valley.">
   <meta name="twitter:image" content="https://hauntedpines.com/assets/og.jpg">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎃</text></svg>">
+  <link rel="manifest" href="/manifest.json">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Haunted Pines">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -112,6 +119,13 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="map.js" defer></script>
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('/sw.js').catch(function () {});
+      });
+    }
+  </script>
 
 </body>
 </html>
