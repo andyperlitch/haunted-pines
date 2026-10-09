@@ -1,5 +1,5 @@
 {
- "count": 24,
+ "count": 25,
  "pins": [
   {
    "address": "116 Baja Sol Dr",
@@ -15,6 +15,11 @@
    "address": "255 Bobs Ln",
    "lat": 37.040159,
    "lng": -122.04255
+  },
+  {
+   "address": "194 Caseta Way",
+   "lat": 37.038709,
+   "lng": -122.042515
   },
   {
    "address": "145 Estrella Dr",
