@@ -1,10 +1,15 @@
 {
- "count": 21,
+ "count": 24,
  "pins": [
   {
    "address": "116 Baja Sol Dr",
    "lat": 37.039821,
    "lng": -122.038004
+  },
+  {
+   "address": "145 Bobs Ln",
+   "lat": 37.039291,
+   "lng": -122.041386
   },
   {
    "address": "255 Bobs Ln",
@@ -62,6 +67,11 @@
    "lng": -122.039793
   },
   {
+   "address": "189 Spreading Oak Dr",
+   "lat": 37.036578,
+   "lng": -122.035728
+  },
+  {
    "address": "630 Sugar Pine Rd",
    "lat": 37.04166,
    "lng": -122.039781
@@ -90,6 +100,11 @@
    "address": "444 Whispering Pines Dr",
    "lat": 37.041508,
    "lng": -122.028437
+  },
+  {
+   "address": "1311 Whispering Pines Dr",
+   "lat": 37.037065,
+   "lng": -122.040242
   },
   {
    "address": "1345 Whispering Pines Dr",

@@ -9,6 +9,11 @@
   "lng": -122.038004,
   "source": "census"
  },
+ "1311 Whispering Pines Dr": {
+  "lat": 37.037065,
+  "lng": -122.040242,
+  "source": "census"
+ },
  "1345 Whispering Pines Dr": {
   "lat": 37.037229,
   "lng": -122.040752,
@@ -24,9 +29,19 @@
   "lng": -122.040698,
   "source": "census"
  },
+ "145 Bobs Ln": {
+  "lat": 37.039291,
+  "lng": -122.041386,
+  "source": "census"
+ },
  "145 Estrella Dr": {
   "lat": 37.042145,
   "lng": -122.03614,
+  "source": "census"
+ },
+ "189 Spreading Oak Dr": {
+  "lat": 37.036578,
+  "lng": -122.035728,
   "source": "census"
  },
  "255 Bobs Ln": {
