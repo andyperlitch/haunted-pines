@@ -1,5 +1,5 @@
 {
- "count": 33,
+ "count": 34,
  "pins": [
   {
    "address": "116 Baja Sol Dr",
@@ -35,6 +35,11 @@
    "address": "892 Lockewood Ln",
    "lat": 37.038443,
    "lng": -122.041458
+  },
+  {
+   "address": "115 Loma Linda Ct",
+   "lat": 37.037083,
+   "lng": -122.038871
   },
   {
    "address": "520 Pinecone Dr",
