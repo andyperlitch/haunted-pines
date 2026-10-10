@@ -139,6 +139,11 @@
   "lng": -122.03781,
   "source": "census"
  },
+ "745 Whispering Pines Dr": {
+  "lat": 37.04035,
+  "lng": -122.034117,
+  "source": "census"
+ },
  "804 Pinecone Dr": {
   "lat": 37.038545,
   "lng": -122.03898,
@@ -162,6 +167,11 @@
  "90 Tan Oak Dr": {
   "lat": 37.040946,
   "lng": -122.038156,
+  "source": "census"
+ },
+ "950 Whispering Pines Dr": {
+  "lat": 37.038276,
+  "lng": -122.03406,
   "source": "census"
  }
 }
