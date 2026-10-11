@@ -1,5 +1,5 @@
 {
- "count": 38,
+ "count": 39,
  "pins": [
   {
    "address": "159 Baja Sol Ct",
@@ -75,6 +75,11 @@
    "address": "610 Pinecone Dr",
    "lat": 37.040757,
    "lng": -122.037101
+  },
+  {
+   "address": "620 Pinecone Dr",
+   "lat": 37.040547,
+   "lng": -122.037068
   },
   {
    "address": "701 Pinecone Dr",
