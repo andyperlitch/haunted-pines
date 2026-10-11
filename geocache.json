@@ -59,6 +59,11 @@
   "lng": -122.03614,
   "source": "census"
  },
+ "159 Baja Sol Ct": {
+  "lat": 37.039219,
+  "lng": -122.035782,
+  "source": "census"
+ },
  "189 Spreading Oak Dr": {
   "lat": 37.036578,
   "lng": -122.035728,
@@ -127,6 +132,11 @@
  "610 Pinecone Dr": {
   "lat": 37.040757,
   "lng": -122.037101,
+  "source": "census"
+ },
+ "620 Whispering Pines Dr": {
+  "lat": 37.039579,
+  "lng": -122.03184,
   "source": "census"
  },
  "630 Sugar Pine Rd": {
