@@ -1,6 +1,16 @@
 {
- "count": 41,
+ "count": 45,
  "pins": [
+  {
+   "address": "110 Baja Sol Ct",
+   "lat": 37.03879,
+   "lng": -122.035732
+  },
+  {
+   "address": "127 Baja Sol Ct",
+   "lat": 37.038952,
+   "lng": -122.035838
+  },
   {
    "address": "159 Baja Sol Ct",
    "lat": 37.039219,
@@ -40,6 +50,11 @@
    "address": "145 Estrella Dr",
    "lat": 37.042145,
    "lng": -122.03614
+  },
+  {
+   "address": "451 Estrella Dr",
+   "lat": 37.040614,
+   "lng": -122.032626
   },
   {
    "address": "892 Lockewood Ln",
@@ -95,6 +110,11 @@
    "address": "740 Pinecone Dr",
    "lat": 37.038845,
    "lng": -122.03781
+  },
+  {
+   "address": "760 Pinecone Dr",
+   "lat": 37.038831,
+   "lng": -122.038161
   },
   {
    "address": "804 Pinecone Dr",
