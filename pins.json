@@ -1,5 +1,5 @@
 {
- "count": 50,
+ "count": 51,
  "pins": [
   {
    "address": "110 Baja Sol Ct",
@@ -225,6 +225,11 @@
    "address": "1311 Whispering Pines Dr",
    "lat": 37.037065,
    "lng": -122.040242
+  },
+  {
+   "address": "1325 Whispering Pines Dr",
+   "lat": 37.037073,
+   "lng": -122.04048
   },
   {
    "address": "1345 Whispering Pines Dr",
