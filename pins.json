@@ -1,5 +1,5 @@
 {
- "count": 46,
+ "count": 47,
  "pins": [
   {
    "address": "110 Baja Sol Ct",
@@ -140,6 +140,11 @@
    "address": "780 Sugar Pine Rd",
    "lat": 37.040634,
    "lng": -122.040955
+  },
+  {
+   "address": "82 Tan Oak Dr",
+   "lat": 37.040862,
+   "lng": -122.038097
   },
   {
    "address": "84 Tan Oak Dr",
