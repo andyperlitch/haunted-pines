@@ -1,6 +1,11 @@
 {
- "count": 51,
+ "count": 52,
  "pins": [
+  {
+   "address": "159 Alto Sol Ct",
+   "lat": 37.038151,
+   "lng": -122.037624
+  },
   {
    "address": "110 Baja Sol Ct",
    "lat": 37.03879,
