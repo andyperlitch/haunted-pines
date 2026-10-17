@@ -1,5 +1,5 @@
 {
- "count": 53,
+ "count": 54,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -115,6 +115,11 @@
    "address": "661 Pinecone Dr",
    "lat": 37.039863,
    "lng": -122.036574
+  },
+  {
+   "address": "664 Pinecone Dr",
+   "lat": 37.039788,
+   "lng": -122.036702
   },
   {
    "address": "685 Pinecone Dr",
