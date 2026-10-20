@@ -1,5 +1,5 @@
 {
- "count": 56,
+ "count": 57,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -40,6 +40,11 @@
    "address": "295 Baja Sol Dr",
    "lat": 37.03871,
    "lng": -122.035764
+  },
+  {
+   "address": "24 Bay Laurel Ct",
+   "lat": 37.045686,
+   "lng": -122.036687
   },
   {
    "address": "145 Bobs Ln",
