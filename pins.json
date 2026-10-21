@@ -1,5 +1,5 @@
 {
- "count": 57,
+ "count": 58,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -75,6 +75,11 @@
    "address": "281 Hidden Glen Drive Scotts Valley",
    "lat": 37.033444,
    "lng": -122.036648
+  },
+  {
+   "address": "890 Lockewood Ln",
+   "lat": 37.038454,
+   "lng": -122.041448
   },
   {
    "address": "892 Lockewood Ln",
