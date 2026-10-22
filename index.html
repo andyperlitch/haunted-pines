@@ -37,13 +37,14 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Luckiest+Guy&family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="preload" as="image" href="assets/hero.jpg">
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
+  <div class="house-ribbon" id="house-ribbon" hidden>🎈 <b id="house-count"></b> HOUSES &amp; COUNTING</div>
   <header class="hero">
     <div class="hero__inner">
       <h1 class="hero__title">
@@ -112,6 +113,12 @@
 
   </main>
 
+  <div class="visitor-counter" id="visitor-counter" hidden>
+    <div class="visitor-counter__label">You are visitor</div>
+    <div class="visitor-counter__odo" id="visitor-digits" aria-live="polite"></div>
+    <small>since the balloons went up · est. 2026</small>
+  </div>
+
   <footer class="footer">
     <p class="footer__deco" aria-hidden="true">🍂 🎃 🍂</p>
     <p>Organized by your Pines neighbors: Andy, Ashley, Mandy, and friends.</p>
@@ -119,6 +126,7 @@
 
   <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
   <script src="map.js" defer></script>
+  <script src="counters.js" defer></script>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function () {

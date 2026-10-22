@@ -384,3 +384,32 @@ h2, h3 { margin: 0 0 .6rem; }
     background-position: center top, center top, center bottom;
   }
 }
+
+/* ---------- HOUSE-COUNT RIBBON ---------- */
+body { position: relative; overflow-x: hidden; }
+.house-ribbon {
+  position: absolute; z-index: 50; pointer-events: none; white-space: nowrap; text-align: center;
+  font-family: "Luckiest Guy", var(--display); letter-spacing: .04em; color: var(--cream);
+  background: linear-gradient(#e5262c, #d4161c 55%, #a80f14);
+  text-shadow: 0 2px 0 rgba(80, 0, 0, .6);
+  border-top: 2px dashed rgba(251, 241, 220, .55); border-bottom: 2px dashed rgba(251, 241, 220, .55);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .5), 0 0 24px rgba(212, 22, 28, .55);
+  /* desktop: top-right corner ribbon */
+  top: 66px; right: -98px; width: 400px; padding: 9px 0 7px; font-size: 19px; transform: rotate(45deg);
+}
+.house-ribbon b { font-weight: normal; color: #fff; font-size: 1.25em; }
+.house-ribbon[hidden] { display: none; }
+@media (max-width: 700px) {
+  /* mobile: tilted banner strip across the top */
+  .house-ribbon { top: 14px; left: -5%; right: auto; width: 110%; font-size: 15px; padding: 8px 0 6px; transform: rotate(-6deg); }
+  body.has-ribbon .hero { padding-top: 96px; }
+}
+
+/* ---------- VISITOR COUNTER ---------- */
+.visitor-counter { display: flex; flex-direction: column; align-items: center; gap: .6rem; margin: 2.5rem auto; color: var(--cream-dim); text-align: center; }
+.visitor-counter[hidden] { display: none; }
+.visitor-counter__label { font-family: "Luckiest Guy", var(--display); font-size: 1.6rem; color: var(--cream); letter-spacing: .04em; }
+.visitor-counter small { font-size: .85rem; letter-spacing: .12em; text-transform: uppercase; opacity: .8; }
+.visitor-counter__odo { display: flex; gap: 6px; padding: 10px 12px; background: linear-gradient(#0b0614, #1d1233); border: 3px solid #3a2a5c; border-radius: 10px; box-shadow: inset 0 2px 8px #000, 0 0 24px rgba(212, 22, 28, .25); }
+.visitor-counter__odo span { width: 46px; height: 64px; display: grid; place-items: center; font: bold 44px "Courier New", monospace; color: #ff3b3f; text-shadow: 0 0 6px #d4161c, 0 0 16px #d4161c; background: linear-gradient(#050208 0, #1a1026 48%, #000 50%, #1a1026 52%, #050208 100%); border-radius: 4px; border: 1px solid #2b1d44; }
+@media (max-width: 420px) { .visitor-counter__odo span { width: 38px; height: 54px; font-size: 36px; } }
