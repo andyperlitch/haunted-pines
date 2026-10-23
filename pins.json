@@ -1,5 +1,5 @@
 {
- "count": 60,
+ "count": 61,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -205,6 +205,11 @@
    "address": "84 Tan Oak Dr",
    "lat": 37.040882,
    "lng": -122.038109
+  },
+  {
+   "address": "88 Tan Oak Dr",
+   "lat": 37.040927,
+   "lng": -122.038141
   },
   {
    "address": "90 Tan Oak Dr",
