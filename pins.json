@@ -1,5 +1,5 @@
 {
- "count": 62,
+ "count": 63,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -70,6 +70,11 @@
    "address": "194 Caseta Way",
    "lat": 37.038709,
    "lng": -122.042515
+  },
+  {
+   "address": "123 Estrella Dr",
+   "lat": 37.042404,
+   "lng": -122.036619
   },
   {
    "address": "145 Estrella Dr",
