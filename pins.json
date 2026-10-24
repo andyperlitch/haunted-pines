@@ -113,8 +113,8 @@
   },
   {
    "address": "520 Pinecone Dr",
-   "lat": 37.041207,
-   "lng": -122.036815
+   "lat": 37.041336,
+   "lng": -122.036816
   },
   {
    "address": "545 Pinecone Dr",
@@ -123,13 +123,13 @@
   },
   {
    "address": "560 Pinecone Dr",
-   "lat": 37.041128,
-   "lng": -122.036872
+   "lat": 37.041178,
+   "lng": -122.036926
   },
   {
    "address": "570 Pinecone Dr",
-   "lat": 37.041108,
-   "lng": -122.036886
+   "lat": 37.041021,
+   "lng": -122.037036
   },
   {
    "address": "610 Pinecone Dr",
@@ -203,28 +203,28 @@
   },
   {
    "address": "82 Tan Oak Dr",
-   "lat": 37.040862,
-   "lng": -122.038097
+   "lat": 37.040578,
+   "lng": -122.037937
   },
   {
    "address": "84 Tan Oak Dr",
-   "lat": 37.040882,
-   "lng": -122.038109
+   "lat": 37.040738,
+   "lng": -122.038039
   },
   {
    "address": "86 Tan Oak Dr",
-   "lat": 37.040908,
-   "lng": -122.038126
-  },
-  {
-   "address": "88 Tan Oak Dr",
-   "lat": 37.040927,
+   "lat": 37.040899,
    "lng": -122.038141
   },
   {
+   "address": "88 Tan Oak Dr",
+   "lat": 37.041059,
+   "lng": -122.038243
+  },
+  {
    "address": "90 Tan Oak Dr",
-   "lat": 37.040946,
-   "lng": -122.038156
+   "lat": 37.04122,
+   "lng": -122.038345
   },
   {
    "address": "101 Tan Oak Dr",
