@@ -13,6 +13,7 @@ import csv, difflib, io, json, math, os, re, sys, time, urllib.parse, urllib.req
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_PATH = os.path.join(ROOT, "geocache.json")
 PINS_PATH = os.path.join(ROOT, "pins.json")
+OVERRIDES_PATH = os.path.join(ROOT, "pin_overrides.json")  # hand-checked coords win over geocoding
 CITY = "Scotts Valley, CA 95066"
 CENTER = (37.040, -122.037)   # Whispering Pines / Twin Pines
 MAX_KM = 5.0
@@ -115,6 +116,29 @@ def geocode(addr):
     return None
 
 
+def load_overrides():
+    if not os.path.exists(OVERRIDES_PATH):
+        return {}
+    d = json.load(open(OVERRIDES_PATH))
+    return d.get("overrides", d)
+
+
+def spread_duplicates(pins, step_m=4.0):
+    """Distinct addresses on the exact same point get fanned out a few meters
+    east-west (centered on the original point) so markers never stack."""
+    groups = {}
+    for p in pins:
+        groups.setdefault((p["lat"], p["lng"]), []).append(p)
+    for (lat, lng), g in groups.items():
+        if len(g) < 2:
+            continue
+        g.sort(key=lambda p: int(re.match(r"\d+", p["address"]).group()))
+        dlng = step_m / (111320 * math.cos(math.radians(lat)))
+        for i, p in enumerate(g):
+            p["lng"] = round(lng + (i - (len(g) - 1) / 2) * dlng, 6)
+        print(f"  spread {len(g)} pins sharing {lat},{lng}: " + ", ".join(p["address"] for p in g))
+
+
 def main():
     url = os.environ.get("CSV_URL")
     if not url:
@@ -131,18 +155,22 @@ def main():
     print(f"{len(rows)} responses, {len(addrs)} unique addresses")
 
     cache = json.load(open(CACHE_PATH)) if os.path.exists(CACHE_PATH) else {}
+    overrides = load_overrides()
     pins, failed = [], []
     for a in addrs:
-        if a not in cache:
+        if a not in cache and a not in overrides:
             res = geocode(a)
             if res:
                 cache[a] = {"lat": round(res[0], 6), "lng": round(res[1], 6), "source": res[2]}
                 print(f"  geocoded {a} via {res[2]}")
-        if a in cache:
+        if a in overrides:
+            pins.append({"address": a, "lat": overrides[a]["lat"], "lng": overrides[a]["lng"]})
+        elif a in cache:
             pins.append({"address": a, "lat": cache[a]["lat"], "lng": cache[a]["lng"]})
         else:
             failed.append(a)
 
+    spread_duplicates(pins)
     pins.sort(key=lambda p: (p["address"].split(" ", 1)[1], int(re.match(r"\d+", p["address"]).group())))
     with open(CACHE_PATH, "w") as f:
         json.dump(dict(sorted(cache.items())), f, indent=1)
