@@ -1,5 +1,5 @@
 {
- "count": 65,
+ "count": 66,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -270,6 +270,11 @@
    "address": "620 Whispering Pines Dr",
    "lat": 37.039579,
    "lng": -122.03184
+  },
+  {
+   "address": "660 Whispering Pines Dr",
+   "lat": 37.039803,
+   "lng": -122.03241
   },
   {
    "address": "745 Whispering Pines Dr",
