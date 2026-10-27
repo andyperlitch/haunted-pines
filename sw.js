@@ -1,6 +1,6 @@
 // Haunted Pines service worker: network-first for pages and pins.json, cache fallback offline.
-const CACHE = 'haunted-pines-v3';
-const PRECACHE = ['/', '/index.html', '/styles.css', '/map.js', '/counters.js', '/pins.json', '/manifest.json', '/icon-192.png'];
+const CACHE = 'haunted-pines-v4';
+const PRECACHE = ['/', '/index.html', '/balloons.html', '/styles.css', '/map.js', '/counters.js', '/pins.json', '/manifest.json', '/icon-192.png'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((c) => c.addAll(PRECACHE)).catch(() => {}));

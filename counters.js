@@ -7,6 +7,7 @@
       var n = d && (d.count != null ? d.count : (d.pins || []).length);
       if (!n) return;
       document.getElementById("house-count").textContent = n;
+      var k = document.getElementById("kit-count"); if (k) k.textContent = n;
       ribbon.hidden = false;
       document.body.classList.add("has-ribbon");
     })

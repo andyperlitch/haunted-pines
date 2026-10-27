@@ -411,3 +411,22 @@ body { position: relative; overflow-x: hidden; }
 .visitor-counter__odo { display: flex; gap: 6px; padding: 10px 12px; background: linear-gradient(#0b0614, #1d1233); border: 3px solid #3a2a5c; border-radius: 10px; box-shadow: inset 0 2px 8px #000, 0 0 24px rgba(212, 22, 28, .25); }
 .visitor-counter__odo span { width: 46px; height: 64px; display: grid; place-items: center; font: bold 44px "Courier New", monospace; color: #ff3b3f; text-shadow: 0 0 6px #d4161c, 0 0 16px #d4161c; background: linear-gradient(#050208 0, #1a1026 48%, #000 50%, #1a1026 52%, #050208 100%); border-radius: 4px; border: 1px solid #2b1d44; }
 @media (max-width: 420px) { .visitor-counter__odo span { width: 38px; height: 54px; font-size: 36px; } }
+
+/* ---------- BALLOON INSTRUCTIONS / TEXT US ---------- */
+.content--page { padding-top: 1.5rem; }
+.back-link { text-align: center; margin: 0 0 1rem; }
+.back-link a:not(.button) { color: var(--orange-hot); font-weight: 700; text-decoration: none; }
+.warning { background: rgba(240,122,26,.15); border: 2px solid var(--orange); border-radius: 12px; padding: .75rem 1rem; font-weight: 700; color: var(--orange-hot); }
+.steps { padding-left: 1.5rem; }
+.steps li { margin-bottom: .6rem; }
+.steps li::marker { color: var(--orange); font-weight: 800; }
+.kit-link { margin-top: 1rem; }
+.kit-link a, .text-us { color: var(--orange-hot); font-weight: 700; }
+
+.kit-btn { display: inline-block; position: relative; z-index: 2; margin: .2rem auto .9rem; padding: .6rem 1.1rem; border-radius: 999px; background: linear-gradient(#ffa53a,#ff7a1a); color: #2a1200; font-weight: 800; font-size: .95rem; text-decoration: none; box-shadow: 0 4px 0 #b4500a, 0 0 18px rgba(255,140,40,.45); }
+.kit-btn:active { transform: translateY(2px); box-shadow: 0 2px 0 #b4500a; }
+@media (min-width: 701px) { .kit-btn { margin-top: .9rem; margin-bottom: auto; } }
+.kit-btn { font-size: 1.15rem; }
+.kit-list li:nth-child(1)::before { content: "🎈"; }
+.kit-list li:nth-child(2)::before { content: "💡"; }
+.kit-list li:nth-child(3)::before { content: "🪝"; }
