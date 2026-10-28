@@ -40,6 +40,12 @@
     });
   }
 
+  var SUFFIX = { Dr: "Drive", Ct: "Court", Ln: "Lane", Rd: "Road", Way: "Way", St: "Street", Ave: "Avenue" };
+  function fullAddr(a) {
+    a = String(a).replace(/\s*Scotts Valley.*$/i, "");
+    return a.replace(/\b(Dr|Ct|Ln|Rd|St|Ave)\.?$/, function (m, k) { return SUFFIX[k]; });
+  }
+
   fetch("pins.json?v=" + Math.floor(Date.now() / 600000), { cache: "no-cache" })
     .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
     .then(function (data) {
@@ -52,7 +58,7 @@
         var dir = "https://www.google.com/maps/dir/?api=1&destination=" +
           encodeURIComponent(p.address + ", Scotts Valley, CA 95066");
         return L.marker([p.lat, p.lng], { icon: icon, title: p.address, alt: p.address })
-          .bindPopup('<strong>' + esc(p.address) + '</strong><br>🎃 Candy here! <a href="' + dir +
+          .bindPopup('<strong>' + esc(fullAddr(p.address)) + '</strong><br>🎃 Candy here! <a href="' + dir +
             '" target="_blank" rel="noopener">Directions</a>');
       });
       var group = L.featureGroup(markers).addTo(map);
