@@ -1,5 +1,5 @@
 {
- "count": 69,
+ "count": 70,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -90,6 +90,11 @@
    "address": "145 Estrella Dr",
    "lat": 37.042145,
    "lng": -122.03614
+  },
+  {
+   "address": "250 Estrella Dr",
+   "lat": 37.041838,
+   "lng": -122.03544
   },
   {
    "address": "451 Estrella Dr",
