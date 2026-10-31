@@ -9,6 +9,11 @@
   "lng": -122.038509,
   "source": "census"
  },
+ "104 Baja Sol Dr": {
+  "lat": 37.039841,
+  "lng": -122.038291,
+  "source": "census"
+ },
  "105 Baja Sol Dr": {
   "lat": 37.039951,
   "lng": -122.038338,
@@ -192,6 +197,11 @@
  "460 Twin Pines Dr": {
   "lat": 37.04295,
   "lng": -122.039017,
+  "source": "census"
+ },
+ "497 Estrella Dr": {
+  "lat": 37.039966,
+  "lng": -122.032741,
   "source": "census"
  },
  "520 Pinecone Dr": {

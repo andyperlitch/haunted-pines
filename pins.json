@@ -1,5 +1,5 @@
 {
- "count": 71,
+ "count": 73,
  "pins": [
   {
    "address": "159 Alto Sol Ct",
@@ -25,6 +25,11 @@
    "address": "159 Baja Sol Ct",
    "lat": 37.039219,
    "lng": -122.035782
+  },
+  {
+   "address": "104 Baja Sol Dr",
+   "lat": 37.039841,
+   "lng": -122.038291
   },
   {
    "address": "105 Baja Sol Dr",
@@ -100,6 +105,11 @@
    "address": "451 Estrella Dr",
    "lat": 37.040614,
    "lng": -122.032626
+  },
+  {
+   "address": "497 Estrella Dr",
+   "lat": 37.039966,
+   "lng": -122.032741
   },
   {
    "address": "281 Hidden Glen Drive Scotts Valley",
